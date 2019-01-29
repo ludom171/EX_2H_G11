@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/editText2"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:background="#7addec"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Reserva:" />
+
+            <TextView
+                android:id="@+id/num_reserva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="reserva"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/editText3"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:background="#7addec"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Placa:" />
+
+            <TextView
+                android:id="@+id/placa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="placa"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/editText4"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:background="#7addec"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="E-mail:" />
+
+            <TextView
+                android:id="@+id/e_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="email"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/black" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/editText9"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:background="#7addec"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Celular:" />
+
+            <TextView
+                android:id="@+id/celular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="celular"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/editText7"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:background="#7addec"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Fecha Ingreso:" />
+
+            <TextView
+                android:id="@+id/feIngreso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="fechaingreso"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/editText71"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:background="#7addec"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Fecha Salida:" />
+
+            <TextView
+                android:id="@+id/feSalida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="fechasalida"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/editText8"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:background="#7addec"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Valor:" />
+
+            <TextView
+                android:id="@+id/valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="valor"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/black" />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</LinearLayout>
+

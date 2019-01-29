@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    android:background="@drawable/fondo_vehiculos">
+
+    <LinearLayout
+        android:id="@+id/reservas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:gravity="center"
+            android:text="LISTA RESERVAS"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <Button
+                android:id="@+id/re_buscar"
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/boton_vehiculo"
+                android:text="Buscar" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listaReservas"
+            android:layout_width="match_parent"
+            android:layout_height="406dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/re_insertar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/boton_vehiculo"
+                android:onClick="Insertar"
+                android:text="Insertar" />
+
+            <Button
+                android:id="@+id/re_eliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/boton_vehiculo"
+                android:enabled="false"
+                android:onClick="Eliminar"
+                android:text="Eliminar" />
+
+            <Button
+                android:id="@+id/re_editar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/boton_vehiculo"
+                android:enabled="false"
+                android:onClick="Editar"
+                android:text="Editar" />
+
+            <Button
+                android:id="@+id/re_listar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/boton_vehiculo"
+                android:onClick="listar"
+                android:text="Listar" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/re_regresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_vehiculo"
+            android:onClick="Desconectar"
+            android:text="Regresar"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

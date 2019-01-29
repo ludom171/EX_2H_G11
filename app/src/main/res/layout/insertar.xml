@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_insertar_editar">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="INGRESO VEHICULO"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PLACA" />
+
+            <EditText
+                android:id="@+id/txt_placa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MARCA" />
+
+            <EditText
+                android:id="@+id/txt_marca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FECHA FABRICACION" />
+
+            <TextView
+                android:id="@+id/text_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0/0/0" />
+
+            <CalendarView
+                android:id="@+id/calendario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COSTO" />
+
+            <EditText
+                android:id="@+id/txt_costo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MATRICULADO" />
+
+            <Spinner
+                android:id="@+id/matricula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COLOR" />
+
+            <CheckBox
+                android:id="@+id/ch_blanco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Blanco" />
+
+            <CheckBox
+                android:id="@+id/ch_negro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Negro" />
+
+            <CheckBox
+                android:id="@+id/ch_otro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Otro" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado" />
+
+            <Spinner
+                android:id="@+id/estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TIPO:" />
+
+            <CheckBox
+                android:id="@+id/ch_automovil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Automovil" />
+
+            <CheckBox
+                android:id="@+id/ch_camioneta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Camioneta" />
+
+            <CheckBox
+                android:id="@+id/ch_furgoneta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Furgoneta" />
+
+            <Button
+                android:id="@+id/btn_foto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton_insertar_editar"
+                android:onClick="TakeFoto"
+                android:text="FOTO"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/galeria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton_insertar_editar"
+                android:onClick="Galeria"
+                android:text="GALERIA"
+                android:textColor="@android:color/background_light" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:id="@+id/foto_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside" />
+
+            <Button
+                android:id="@+id/btn_insertar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton_insertar_editar"
+                android:onClick="saveVehiculo"
+                android:text="INSERTAR VEHICULO"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/btn_regresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton_insertar_editar"
+                android:onClick="RegresarVehiculo"
+                android:text="Regresar"
+                android:textColor="@android:color/background_light" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
